@@ -1,0 +1,29 @@
+.page{
+  margin-left: 16px;
+  width: 400px;
+}
+.title{
+  margin-bottom: 40px;
+}
+
+.todoBlock{
+height: fit-content;
+max-height: 730px;
+overflow-y: auto;
+}
+
+.buttonsDiv{
+  width: 400px;
+  display: flex;
+ justify-content: space-between;
+  margin-bottom: 26px;
+}
+
+.smallBtns{
+  margin-top: 20px;
+  width: 300px;
+}
+
+.formActions{
+  margin-left: 8px;
+}
