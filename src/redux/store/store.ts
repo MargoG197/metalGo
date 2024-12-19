@@ -1,12 +1,11 @@
  import { configureStore } from '@reduxjs/toolkit';
-import { TTodoResponse } from '../../api/todoApi';
-import reducer from "./reducer";
+import todosReducer from "../todoSlice/todoSlice"
 
-type TReducer = (state: TTodoResponse[], lastId: number, action: { type: string; payload: TTodoResponse }) => { id: number; title: string; completed: boolean }
-
-const store = configureStore<TReducer>({
-    reducer: reducer,
+export const store = configureStore({
+    reducer: todosReducer,
 });
 
-export default store;
+export type AppDispatch = typeof store.dispatch;
+export type RootState = ReturnType<typeof store.getState>;
+
 

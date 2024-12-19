@@ -7,7 +7,7 @@ const todoEndpoint = `${API_URL}todos`;
 
 
 type TTodoResponse = {
-  userId: number
+  userId?: number
   id: number
   title: string
   completed: boolean
